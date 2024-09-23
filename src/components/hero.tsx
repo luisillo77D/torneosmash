@@ -3,7 +3,7 @@ export default function Hero(){
     return(
         <div className="h-1/2 md:h-5/6 relative">
             <div className="h-full">
-                <img src="src/images/fondo.png" className="h-full object-cover md:object-fill md:h-full md:w-full" alt="" />
+                <img src="src/images/fondo.webp" className="h-full object-cover md:object-fill md:h-full md:w-full" alt="" />
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-white text-center w-3/4 gap-5">
                 <h1 className="text-4xl font-extrabold">Super Smash Bros Tournament</h1>

@@ -1,0 +1,34 @@
+---
+// Component Imports
+import Hero from '../components/hero.tsx';
+import InfoContainer from '../components/infoContainer.tsx';
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<style>
+			html,
+			body {
+				font-family: system-ui;
+				margin: 0;
+			}
+			body {
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<main class=" h-screen md:min-h-screen md:max-h-screen md:overflow-hidden ">
+			<Hero></Hero>
+			<InfoContainer  client:load></InfoContainer>
+		</main>
+	</body>
+</html>
